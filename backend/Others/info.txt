@@ -1,0 +1,32 @@
+
+
+To-Do : https://docs.google.com/spreadsheets/d/1C5EoAq_t8T5jS_22v6y3oxEKdjbk3pSZPiowsYaDbzU/edit?usp=sharing
+
+
+admin 1: //demo 1
+ 
+Event ID: DZKIGT
+Email : demo1@demo.com
+Password : demo
+
+
+admin 2: // demo 2
+
+Event ID: UBTKQR
+Email : demo2@demo.com
+Password : demo
+
+admin 3: // demo 3
+
+Event ID: MPRN62
+Email : demo3@demo.com
+Password : demo
+
+
+
+
+Table : code pen link : https://codepen.io/tarunalexx/pen/WNgbWPr
+Error Page : https://codepen.io/leenalavanya/pen/RYqvgK
+Error Page : https://codepen.io/Tibixx/pen/GRKmppz
+
+AppPassword Link : https://myaccount.google.com/apppasswords

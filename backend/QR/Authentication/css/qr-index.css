@@ -1,0 +1,48 @@
+/*  import google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Capriola&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Capriola", sans-serif;
+}
+
+body {
+  background-color: rgba(99, 251, 215, 1);
+}
+
+/* navbar  */
+.navbar {
+  min-width: 320px;
+}
+
+#page-title {
+  padding: 50px;
+  font-size: x-large;
+  color: white;
+}
+
+#toggle-fullscreen {
+  background-color: #007bff;
+  border: none;
+  font-size: xx-large;
+  color: white;
+  font-weight: bold;
+}
+
+#message{
+  padding: 20px;
+}
+
+#message-p{
+  font-size: x-large;
+  font-weight: bold;
+  color: green;
+}
+
+#demo-btn{
+  width: 100px;
+}
+
+

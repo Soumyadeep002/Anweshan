@@ -1,0 +1,159 @@
+/*  import google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Capriola&display=swap");
+
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: "Capriola", sans-serif;
+}
+body {
+  background-color: #09203f;
+}
+
+/* navbar  */
+.navbar {
+  min-width: 320px;
+}
+
+/* home-heading */
+.container .home-heading {
+  border: 2px solid white;
+  border-radius: 10px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  color: white;
+  backdrop-filter: blur(5px);
+  height: fit-content;
+  min-width: 320px;
+}
+
+.container .home-heading .home-heading-content p a {
+  margin-top: 10px;
+}
+
+#admin-heading {
+  /* margin: 10px auto; */
+  padding-top: 30px;
+  text-align: center;
+  color: white;
+}
+
+/* cursole  */
+
+.carousel-inner img {
+  height: 500px;
+}
+
+/* participant-list & live-participant-list */
+.participant-list .participant-list-title h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: white;
+}
+
+/* edit form  */
+
+#logreg-forms {
+  width: 60%;
+  min-width: 300px;
+  margin: 10vh auto;
+  background-color: #f3f3f3;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+#logreg-forms form {
+  width: 100%;
+  /* max-width: 410px; */
+  padding: 15px;
+  margin: auto;
+}
+
+#logreg-forms .form-control {
+  position: relative;
+  box-sizing: border-box;
+  height: auto;
+  padding: 10px;
+  font-size: 16px;
+}
+
+#logreg-forms .form-control:focus {
+  z-index: 2;
+}
+
+#logreg-forms input[type="email"],
+#logreg-forms input[type="text"],
+#logreg-forms input[type="password"],
+#logreg-forms input[type="email"],
+#logreg-forms input[type="text"],
+#logreg-forms input[type="password"],
+#logreg-forms input[type="email"],
+#logreg-forms input[type="text"],
+#logreg-forms input[type="password"],
+#logreg-forms input[type="time"],
+#logreg-forms input[type="date"],
+#logreg-forms textarea,
+#logreg-forms button[type="submit"],
+#logreg-forms button[type="button"],
+#logreg-forms button[type="reset"] {
+  border-radius: 10px;
+}
+
+#logreg-forms button[type="submit"],
+#logreg-forms button[type="reset"] {
+  margin-top: 10px;
+}
+
+#logreg-forms input,
+#logreg-forms input,
+#logreg-forms input,
+#logreg-forms textarea {
+  margin-bottom: 2px;
+}
+
+#logreg-forms a {
+  display: block;
+  padding-top: 10px;
+  color: lightseagreen;
+}
+
+@media screen and (max-width: 500px) {
+  #logreg-forms {
+    width: 300px;
+  }
+}
+
+/* footer  */
+footer {
+  text-align: center;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+footer div {
+  backdrop-filter: blur(10px);
+  border: 2px solid white;
+  border-radius: 10px;
+}
+
+footer div p {
+  margin: 10px auto;
+  color: white;
+}
+
+#admin-buttons{
+display: flex;
+flex-wrap: wrap;
+}
+
+#admin-buttons a{
+  margin: 10px;
+  margin-left: 0px;
+}
+
+#admin-controls{
+  text-align: center;
+
+}
+
