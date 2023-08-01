@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 15, 2023 at 10:07 AM
+-- Generation Time: Jul 31, 2023 at 05:56 PM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.0.28
 
@@ -43,16 +43,15 @@ CREATE TABLE `events` (
   `c_image3` varchar(100) NOT NULL DEFAULT 'eb-black-bg-logo-16-9.png',
   `approval` int(1) NOT NULL DEFAULT 0,
   `e_slot` int(10) NOT NULL,
-  `event_type` varchar(10) DEFAULT NULL,
-  `max_participant` int(11) DEFAULT NULL
+  `event_type` varchar(10) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `events`
 --
 
-INSERT INTO `events` (`event_id`, `event_name`, `event_s_date`, `event_s_time`, `event_e_date`, `event_e_time`, `event_venue`, `organizer`, `event_desc`, `event_broc`, `c_image1`, `c_image2`, `c_image3`, `approval`, `e_slot`, `event_type`, `max_participant`) VALUES
-('0N5HL6', 'DRONATHON 2K23', '2023-01-01', '00:00:00', '2023-01-01', '00:00:00', 'Update Your event venue', 'SOUMYADEEP', 'event buddy description (please update from below )', '0N5HL6_event_broc.pdf', '0N5HL6_c_img1.png', '0N5HL6_c_img2.png', 'eb-black-bg-logo-16-9.png', 1, 0, 'tech', 3);
+INSERT INTO `events` (`event_id`, `event_name`, `event_s_date`, `event_s_time`, `event_e_date`, `event_e_time`, `event_venue`, `organizer`, `event_desc`, `event_broc`, `c_image1`, `c_image2`, `c_image3`, `approval`, `e_slot`, `event_type`) VALUES
+('0N5HL6', 'DRONATHON 2K23', '2023-01-01', '00:00:00', '2023-01-01', '00:00:00', 'Update Your event venue', 'SOUMYADEEP', 'event buddy description (please update from below )', '0N5HL6_event_broc.pdf', '0N5HL6_c_img1.png', '0N5HL6_c_img2.png', 'eb-black-bg-logo-16-9.png', 1, 0, 'tech');
 
 -- --------------------------------------------------------
 

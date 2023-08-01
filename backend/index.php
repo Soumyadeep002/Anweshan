@@ -90,7 +90,7 @@ if (!defined('my-site')) {
         <div id="events-section">
             <div class="content">
                 <div id="events-section-heading">
-                    <h3>All Events</h3>
+                    <h3>Register for Upcoming Events</h3>
                 </div>
                 <div class="search-container">
                     <input type="text" id="myFilter" name="search" class="form-control" onkeyup="myFunction()" placeholder="Search for events...">
@@ -102,7 +102,7 @@ if (!defined('my-site')) {
                     <!-- Fetching Data From DataBase -->
                     <?php
 
-                    $sql = "SELECT * FROM events WHERE approval = 1  ORDER BY event_s_date;";
+                    $sql = "SELECT * FROM events WHERE approval = 1 ORDER BY event_s_date;";
                     $result = $conn->query($sql);
 
                     //Checking Wether
@@ -117,7 +117,7 @@ if (!defined('my-site')) {
                             <div class="card">
                                 <div class="card-header">
                                     <!-- showing background image -->
-                                    <div style="background-image: url('event-assets/c_image/<?php echo $row['c_image2']; ?>');" class="img">
+                                    <div style="background-image: url('event-assets/c_image/<?php echo $row['c_image1']; ?>');" class="img">
                                     </div>
                                 </div>
                                 <div class="card-body">
@@ -133,7 +133,7 @@ if (!defined('my-site')) {
 
 
                                         <!-- redirecting to event.php along with event-id using get method -->
-                                        <a href="../event.php?event_id=<?php echo $row['event_id'] ?>" class="btn">View Details</a>
+                                        <a href="../src/event.php?event_id=<?php echo $row['event_id'] ?>" class="btn">View Details</a>
                                     </div>
                                 </div>
                             </div>

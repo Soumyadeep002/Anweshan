@@ -71,8 +71,7 @@ session_start();
 
 
 
-            <input type="text" id="max_participant" name="max_participant" class="form-control" required=""
-                placeholder="Maximum number of participant in a Team" />
+            
             <input type="text" id="event-organizer" name="organizer" class="form-control" required=""
                 placeholder="Event Organizer" />
             <input type="text" id="event-admin-name" class="form-control" name="a_name" required=""
@@ -89,7 +88,7 @@ session_start();
             <a href="../signup-login/login.php"><i class="fas fa-angle-left"></i> Back</a>
         </form>
         <?php
-        if (isset($_POST['event_name']) && isset($_POST['btnradio']) && isset($_POST['max_participant']) && isset($_POST['organizer']) && isset($_POST['a_name'])  && isset($_POST['a_email'])  && isset($_POST['a_retype-password'])  && isset($_POST['a_password'])) {
+        if (isset($_POST['event_name']) && isset($_POST['btnradio']) && isset($_POST['organizer']) && isset($_POST['a_name'])  && isset($_POST['a_email'])  && isset($_POST['a_retype-password'])  && isset($_POST['a_password'])) {
 
 
 
@@ -108,18 +107,18 @@ session_start();
                 $event_id = substr(str_shuffle($data), 0, 6);
                 $event_name = test_input($_POST['event_name']);
                 $event_type = test_input($_POST['btnradio']);
-                $max_participant = test_input($_POST['max_participant']);
+             
                 $organizer = test_input($_POST['organizer']);
                 $a_name = test_input($_POST['a_name']);
                 $a_email = test_input($_POST['a_email']);
                 $a_password = test_input($_POST['a_password']);
                 //Hashing Password
                 $h_password = password_hash($a_password, PASSWORD_DEFAULT);
-                $stmt1 = $conn->prepare("INSERT INTO events (event_id, event_name, organizer, event_type, max_participant)
-                VALUES (?, ?, ?, ?, ?);");
+                $stmt1 = $conn->prepare("INSERT INTO events (event_id, event_name, organizer, event_type )
+                VALUES (?, ?, ?, ?);");
                 $stmt2 = $conn->prepare(" INSERT INTO event_admin (a_name, event_id, a_email, a_password)
                 VALUES (?, ?, ?, ?);");
-                $stmt1->bind_param("sssss", $event_id, $event_name, $organizer, $event_type, $max_participant);
+                $stmt1->bind_param("ssss", $event_id, $event_name, $organizer, $event_type);
                 $stmt2->bind_param("ssss", $a_name, $event_id, $a_email, $h_password);
                 $stmt1->execute();
                 $stmt2->execute();
@@ -133,7 +132,7 @@ session_start();
                     $_SESSION['e-a-email'] = $a_email;
                   
                   
-                    $_SESSION['e-a-max_participant'] = $max_participant;
+                   
                     $_SESSION['e-a-event_type'] = $event_type;
                     $_SESSION['e-a-organizer'] = $organizer;
                    

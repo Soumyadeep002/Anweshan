@@ -46,7 +46,7 @@
                     clip-rule="evenodd" />
                 </svg>
               </span></button>
-            <div class="flex justify-center ">
+            <div class="flex justify-center lg:translate-y-10 w-full">
               <div id="menu"
                 class="absolute hidden py-3 gap-3   group-hover:flex  left-auto right-auto flex   lg:ml-9  flex-col bg-white lg:bg-cyan-950 text-cyan-950 lg:text-white drop-shadow-md">
                 <a class="px-5 py-3 text-center  hover:bg-cyan-950 duration-300 hover:text-white font-semibold text-xl lg:hover:bg-white lg:hover:text-cyan-950  "
