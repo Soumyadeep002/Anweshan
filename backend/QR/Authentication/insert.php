@@ -60,8 +60,7 @@ if(isset($_POST['text'])){
                 if($query)
 
                 {
-                    
-                    ?>
+                                        ?>
 
 
                     

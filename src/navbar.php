@@ -25,16 +25,16 @@
         <div class=" lf order-2  mb-5 lg:mb-0  flex flex-col lg:flex-row space-y-5 lg:space-y-0 mr-4">
 
           <div id="home"
-            class="element duration-150 hover:lg:bg-white lg:px-6 lg:py-10 transition-all ease-linear lg:hover:lg:text-blue-500  flex lg:space-x-2 items-center mx-auto  text-white lg:text-white font-bold text-2xl hover:cursor-pointer">
+            class="element duration-150 hover:lg:bg-white lg:px-6 lg:py-5 transition-all ease-linear lg:hover:lg:text-blue-500  flex lg:space-x-2 items-center mx-auto  text-white lg:text-white font-bold text-2xl hover:cursor-pointer">
             <a href="../index.html">HOME</a>
 
           </div>
           <div id="about"
-            class="element duration-150 transition-all ease-linear mx-auto hover:lg:bg-white lg:px-6 lg:py-10 text-white lg:text-white font-bold text-2xl  lg:hover:lg:text-blue-500 pb-0 lg:pb-3 ">
+            class="element duration-150 transition-all ease-linear mx-auto hover:lg:bg-white lg:px-6 lg:py-5 text-white lg:text-white font-bold text-2xl  lg:hover:lg:text-blue-500 pb-0 lg:pb-3 ">
             <a href="../index.html#about-data">ABOUT</a>
           </div>
           <div id="event"
-            class="group element duration-150 transition-all ease-linear mx-auto hover:lg:bg-white lg:px-6 lg:py-10 text-white lg:text-white font-bold text-2xl  lg:hover:lg:text-blue-500 pb-0 lg:pb-3 ">
+            class="group element duration-150 transition-all ease-linear mx-auto hover:lg:bg-white lg:px-6 lg:py-5 text-white lg:text-white font-bold text-2xl  lg:hover:lg:text-blue-500 pb-0 lg:pb-3 ">
             <!-- event dropdown -->
           <div id="dropdown-wrapper" class="inline-block group">
             <button
@@ -46,7 +46,7 @@
                     clip-rule="evenodd" />
                 </svg>
               </span></button>
-            <div class="flex justify-center lg:translate-y-10 w-full">
+            <div class="flex justify-center lg:translate-y-5 w-full">
               <div id="menu"
                 class="absolute hidden py-3 gap-3   group-hover:flex  left-auto right-auto flex   lg:ml-9  flex-col bg-white lg:bg-cyan-950 text-cyan-950 lg:text-white drop-shadow-md">
                 <a class="px-5 py-3 text-center  hover:bg-cyan-950 duration-300 hover:text-white font-semibold text-xl lg:hover:bg-white lg:hover:text-cyan-950  "
@@ -60,25 +60,25 @@
           </div>
 
           <div id="sponsor"
-            class="element duration-150 transition-all ease-linear mx-auto hover:lg:bg-white lg:px-6 lg:py-10 text-white lg:text-white font-bold text-2xl  lg:hover:lg:text-blue-500 pb-0 lg:pb-3 ">
+            class="element duration-150 transition-all ease-linear mx-auto hover:lg:bg-white lg:px-6 lg:py-5 text-white lg:text-white font-bold text-2xl  lg:hover:lg:text-blue-500 pb-0 lg:pb-3 ">
             <a href="../index.html#sponsor-data">SPONSORS</a>
           </div>
 
           <div id="gallery"
-            class="element duration-150 transition-all ease-linear mx-auto hover:lg:bg-white lg:px-6 lg:py-10 text-white lg:text-white font-bold text-2xl  lg:hover:lg:text-blue-500 pb-0 lg:pb-3 ">
+            class="element duration-150 transition-all ease-linear mx-auto hover:lg:bg-white lg:px-6 lg:py-5 text-white lg:text-white font-bold text-2xl  lg:hover:lg:text-blue-500 pb-0 lg:pb-3 ">
             
-            <a href="../index.html#gallery-data">GALLERY</a>
+            <a href="gallery.html">GALLERY</a>
           </div>
           <div id="team"
-            class="element duration-150 transition-all ease-linear mx-auto hover:lg:bg-white lg:px-6 lg:py-10 text-white lg:text-white font-bold text-2xl  lg:hover:lg:text-blue-500 pb-0 lg:pb-3 ">
+            class="element duration-150 transition-all ease-linear mx-auto hover:lg:bg-white lg:px-6 lg:py-5 text-white lg:text-white font-bold text-2xl  lg:hover:lg:text-blue-500 pb-0 lg:pb-3 ">
             <a href="../index.html#team-data">TEAM</a>
           </div>
 
         </div>
 
 
-        <a href="../index.html"><div class="center order-1 mt-8 lg:items-center lg:mt-0  invisible lg:visible flex  lg:mr-auto lg:ml-10 ">
-          <img class="w-[22%]" src="../assets/logo.png" alt="">
+        <a href="../index.html"><div class="center order-1 mt-8 lg:items-center lg:mt-0 invisible lg:visible flex  lg:mr-auto lg:ml-10 ">
+          <img class="min-w-[100px] w-[15%]" src="../assets/logo.png" alt="">
 
         </div></a>
 

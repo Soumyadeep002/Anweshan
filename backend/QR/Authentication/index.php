@@ -91,9 +91,12 @@ if(isset($_SESSION['event_id'])){
 
                 <div class="navbar-nav ms-auto">
                     <a href="../../admin/admin.php" class="nav-item nav-link active">Home</a>
-                    <a href="../../admin/admin-event-details-update.php" class="nav-item nav-link active">Update Event Details</a>
-                    <a href="../../admin/admin-event-files-update.php" class="nav-item nav-link active">Update Event Files</a>
-                    <a href="../../admin/admin-participat-list.php" class="nav-item nav-link active">Participant List</a>
+                    <a href="../../admin/admin-event-details-update.php" class="nav-item nav-link active">Update Event
+                        Details</a>
+                    <a href="../../admin/admin-event-files-update.php" class="nav-item nav-link active">Update Event
+                        Files</a>
+                    <a href="../../admin/admin-participat-list.php" class="nav-item nav-link active">Participant
+                        List</a>
                     <a href="../../admin/admin-attandence-list.php" class="nav-item nav-link active">Attendance List</a>
 
                     <a href="../../admin/admin-create-admin.php" class="nav-item nav-link active">Create New Admin</a>
@@ -103,7 +106,8 @@ if(isset($_SESSION['event_id'])){
                 <div class="navbar-nav ">
 
                     <a onclick="javascript:return confirm('Are You Want to Logout');" type="button"
-                        href="../../signup-login/logout.php" class="nav-item nav-link active"><strong>Logout</strong></a>
+                        href="../../signup-login/logout.php"
+                        class="nav-item nav-link active"><strong>Logout</strong></a>
 
 
                     <div class="navbar-nav ">
@@ -127,8 +131,8 @@ if(isset($_SESSION['event_id'])){
                 <svg class="bi pe-none me-2" width="40" height="32">
                     <use xlink:href="#bootstrap"></use>
                 </svg>
-                <a href="../../index.php" class="" style="margin-left: auto; margin-right: auto;"><img style="height:80px;"
-                        src="../../../assets/logo.png" alt="logo"></a>
+                <a href="../../index.php" class="" style="margin-left: auto; margin-right: auto;"><img
+                        style="height:80px;" src="../../../assets/logo.png" alt="logo"></a>
             </a>
             <hr>
             <ul class="nav nav-pills flex-column mb-auto">
@@ -183,8 +187,8 @@ if(isset($_SESSION['event_id'])){
                 </li>
 
                 <li>
-                    <a onclick="javascript:return confirm('Are You Want to Logout');" href="../../signup-login/logout.php"
-                        type="button" class="nav-link link-body-emphasis ">
+                    <a onclick="javascript:return confirm('Are You Want to Logout');"
+                        href="../../signup-login/logout.php" type="button" class="nav-link link-body-emphasis ">
                         <svg class="bi pe-none me-2" width="16" height="16">
                             <use xlink:href="#people-circle"></use>
                         </svg>
@@ -224,7 +228,7 @@ if(isset($_SESSION['event_id'])){
                     <label><strong style="color: white;">Scan QR Code</strong></label>
                 </div>
                 <div>
-                    <video id="preview" width="100%" ></video>
+                    <video id="preview" width="50%"></video>
                 </div>
                 <div>
                     <form id="myForm" action="insert.php" method="post" class="form-horizontal">
@@ -290,6 +294,8 @@ if(isset($_SESSION['event_id'])){
             // alert(c);
 
             document.getElementById('text').value = c;
+          
+      
 
 
             window.location.href = 'insert.php' + '?c=' + c;
@@ -299,11 +305,11 @@ if(isset($_SESSION['event_id'])){
 
 
     <!-- scripts  -->
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
@@ -373,7 +379,7 @@ if(isset($_SESSION['event_id'])){
 
 <!-- live-participant-list -->
 <div id="live-participant-list" class="participant-list container">
-    <div style="margin: auto; text-align: center; padding-bottom:20px; " class="participant-list-title">
+    <div style="margin: auto; text-align: center; padding-bottom:20px; color:white;" class="participant-list-title">
         <h2>Attendance List</h2>
     </div>
 

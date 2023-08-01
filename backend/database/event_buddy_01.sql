@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 31, 2023 at 05:56 PM
+-- Generation Time: Aug 01, 2023 at 06:56 PM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.0.28
 
@@ -51,7 +51,15 @@ CREATE TABLE `events` (
 --
 
 INSERT INTO `events` (`event_id`, `event_name`, `event_s_date`, `event_s_time`, `event_e_date`, `event_e_time`, `event_venue`, `organizer`, `event_desc`, `event_broc`, `c_image1`, `c_image2`, `c_image3`, `approval`, `e_slot`, `event_type`) VALUES
-('0N5HL6', 'DRONATHON 2K23', '2023-01-01', '00:00:00', '2023-01-01', '00:00:00', 'Update Your event venue', 'SOUMYADEEP', 'event buddy description (please update from below )', '0N5HL6_event_broc.pdf', '0N5HL6_c_img1.png', '0N5HL6_c_img2.png', 'eb-black-bg-logo-16-9.png', 1, 0, 'tech');
+('0N5HL6', 'DRONEMANIA', '2023-01-01', '00:00:00', '2023-01-01', '00:00:00', 'Update Your event venue', 'SOUMYADEEP', 'event buddy description (please update from below )', '0N5HL6_event_broc.pdf', '0N5HL6_c_img1.png', '0N5HL6_c_img2.png', 'eb-black-bg-logo-16-9.png', 1, 0, 'tech'),
+('HI8EY3', 'PRIMA FACIE', '2023-01-01', '00:00:00', '2023-01-01', '00:00:00', 'Update Your event venue', 'SOUMYADEEP', 'event buddy description (please update from below )', 'HI8EY3_event_broc.pdf', 'HI8EY3_c_img1.png', 'HI8EY3_c_img2.png', 'eb-black-bg-logo-16-9.png', 1, 0, 'tech'),
+('9LN1XO', 'GAME-CON', '2023-01-01', '00:00:00', '2023-01-01', '00:00:00', 'Update Your event venue', 'dasd', 'event buddy description (please update from below )', '9LN1XO_event_broc.pdf', '9LN1XO_c_img1.png', '9LN1XO_c_img2.png', 'eb-black-bg-logo-16-9.png', 1, 0, 'tech'),
+('MDE8QR', 'SIT &amp; DRAW', '2023-01-01', '00:00:00', '2023-01-01', '00:00:00', 'Update Your event venue', 'dasd', 'event buddy description (please update from below )', 'MDE8QR_event_broc.pdf', 'MDE8QR_c_img1.png', 'MDE8QR_c_img2.png', 'eb-black-bg-logo-16-9.png', 1, 0, 'cultural'),
+('7RM9SQ', 'DANCE', '2023-01-01', '00:00:00', '2023-01-01', '00:00:00', 'Update Your event venue', 'SOUMYADEEP', 'event buddy description (please update from below )', '7RM9SQ_event_broc.pdf', '7RM9SQ_c_img1.png', '7RM9SQ_c_img2.png', 'eb-black-bg-logo-16-9.png', 1, 0, 'cultural'),
+('1VFIU9', 'NRITYA NATYA', '2023-01-01', '00:00:00', '2023-01-01', '00:00:00', 'Update Your event venue', 'SOUMYADEEP', 'event buddy description (please update from below )', '1VFIU9_event_broc.pdf', '1VFIU9_c_img1.png', '1VFIU9_c_img2.png', 'eb-black-bg-logo-16-9.png', 1, 0, 'cultural'),
+('B1UGQZ', 'QUIZ COMPETITION', '2023-01-01', '00:00:00', '2023-01-01', '00:00:00', 'Update Your event venue', 'SOUMYADEEP', 'event buddy description (please update from below )', 'B1UGQZ_event_broc.pdf', 'B1UGQZ_c_img1.png', 'B1UGQZ_c_img2.png', 'eb-black-bg-logo-16-9.png', 1, 0, 'cultural'),
+('MBSFIN', 'RECITATION', '2023-01-01', '00:00:00', '2023-01-01', '00:00:00', 'Update Your event venue', 'SOUMYADEEP', 'event buddy description (please update from below )', 'MBSFIN_event_broc.pdf', 'MBSFIN_c_img1.png', 'MBSFIN_c_img2.png', 'eb-black-bg-logo-16-9.png', 1, 0, 'cultural'),
+('1OYC89', 'SPRINT-R', '2023-01-01', '00:00:00', '2023-01-01', '00:00:00', 'Update Your event venue', 'SOUMYADEEP', 'event buddy description (please update from below )', '1OYC89_event_broc.pdf', '1OYC89_c_img1.png', '1OYC89_c_img2.png', 'eb-black-bg-logo-16-9.png', 1, 0, 'tech');
 
 -- --------------------------------------------------------
 
@@ -73,7 +81,15 @@ CREATE TABLE `event_admin` (
 INSERT INTO `event_admin` (`a_name`, `a_email`, `a_password`, `event_id`) VALUES
 ('soumyadeep', 'sambhuganguli1@gmail.com', '$2y$10$cHA1pBJcdcIj9mvE6pETs.jHhwdGlDX.zoZ3Nof4WcNCWgVSW8a7a', '4H28DR'),
 ('soumyadeep', 'sambhuganguli1@gmail.com', '$2y$10$XFKqDvlsGWt61mCyMiJ3ueKdGOs0IstUTo7Fp4hGzVFTeNTdLG74C', '0L7GIW'),
-('soumyadeep', 'sambhuganguli1@gmail.com', '$2y$10$QrfJqmr0uVNIkHhqsQDFYuRoNtL9HwHdJ00sXbjSWVuGjTYcn9zEW', '0N5HL6');
+('soumyadeep', 'sambhuganguli1@gmail.com', '$2y$10$QrfJqmr0uVNIkHhqsQDFYuRoNtL9HwHdJ00sXbjSWVuGjTYcn9zEW', '0N5HL6'),
+('soumyadeep', 'sambhuganguli1@gmail.com', '$2y$10$4bEZGKLyITX61h5MWVZ2Q.7225dbmEldMwPyI87r6ujwNSvY/Llfm', 'HI8EY3'),
+('soumyadeep', 'sambhuganguli1@gmail.com', '$2y$10$LMoy2muLeTc/qL9NeedLfeit8Zaxa7gv3AoWrpRWzHOQHSSvfz1FK', '9LN1XO'),
+('soumyadeep', 'sambhuganguli1@gmail.com', '$2y$10$GgrrUaV4BW/hi/OGLtAH8eEDJm2jbtDCOiXiFx6XF45QWRolqLXF2', 'MDE8QR'),
+('soumyadeep', 'sambhuganguli1@gmail.com', '$2y$10$UmH/xfkQY2mP3LSfdkuGA.o5xrd.V5dXroLdqwfFIYRuSesDrA1Bm', '7RM9SQ'),
+('soumyadeep', 'sambhuganguli1@gmail.com', '$2y$10$JCqTOt9aX99rNuF.MVmiXuHptJ0w1dqKSMtOxZw0RAwF4Z.lx1B.C', '1VFIU9'),
+('soumyadeep', 'sambhuganguli1@gmail.com', '$2y$10$ocxmkC6Pi6UgE7CWI99CCuUFoc9vkbVhF/TvWOU2DnRFF7JOZ4z0m', 'B1UGQZ'),
+('soumyadeep', 'sambhuganguli1@gmail.com', '$2y$10$XzHs0GnE8BcbicgkOYL5Nu/gQ2jUZ09h1gsxpGdsGFm0tzBWTdADS', 'MBSFIN'),
+('soumyadeep', 'sambhuganguli1@gmail.com', '$2y$10$tDjxXT6om6sglk3JF3SYVOH/0mvTgTb4VuNQU3/PwIZw53ifkJdQ.', '1OYC89');
 
 -- --------------------------------------------------------
 
@@ -82,7 +98,7 @@ INSERT INTO `event_admin` (`a_name`, `a_email`, `a_password`, `event_id`) VALUES
 --
 
 CREATE TABLE `participant` (
-  `p_email` varchar(30) NOT NULL,
+  `p_email` varchar(100) NOT NULL,
   `p_name` varchar(20) NOT NULL,
   `mobile` varchar(15) NOT NULL,
   `qr_image` varchar(50) NOT NULL,
@@ -98,10 +114,9 @@ CREATE TABLE `participant` (
 --
 
 INSERT INTO `participant` (`p_email`, `p_name`, `mobile`, `qr_image`, `attendance`, `entry_time`, `event_id`, `department`, `collage`) VALUES
-('sambhuganguli1@gmail.com', 'Soumyadeep Ganguly', '08240254624', '1689352659.png', 0, '00:00:00', '4H28DR', 'dsa5d56asd', 's1d1as1d23'),
-('adasd@gmail.com', 'sssssss', 'sda', '1689352831.png', 0, '00:00:00', '4H28DR', 'sda', 'asd'),
-('sambhuganuli1@gmail.com', 'Soumyadeep Ganguly', '08240254624', '1689352859.png', 0, '00:00:00', '4H28DR', 'sax', 'asx'),
-('gssgs@gmail.com', 'sgsgsgsggsgsg', 'asds', '1689353073.png', 0, '00:00:00', '4H28DR', 'sd', 'ddddddddddddddddddddddddd');
+('sambhuganguli1@gmail.com', 'Name1', '8240254624', '1690905559.png', 1, '21:33:30', '0N5HL6', 'IT', 'MAKAUT'),
+('arunmondal3457@gmail.com', 'Name2', '3262565565', '1690905595.png', 1, '21:33:23', '0N5HL6', 'IT', 'MAKAUT'),
+('soumyadeepganguly1922@gmail.com', 'adsds', '08240254624', '1690906522.png', 1, '21:56:19', '0N5HL6', 'ds', 'makaut');
 
 -- --------------------------------------------------------
 
