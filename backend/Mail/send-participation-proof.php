@@ -82,7 +82,7 @@ if ($result->num_rows > 0 && $result2->num_rows>0)
 												//TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
 				//Recipients
-				$mail->setFrom('eventbuddy05@gmail.com', "admin@Event-Buddy");
+				$mail->setFrom('eventbuddy05@gmail.com', "admin@Anweshan");
 				foreach($participants as $participants) { 
 					$name = $participants['name'];
 					$event_name = $participants['event_name'];

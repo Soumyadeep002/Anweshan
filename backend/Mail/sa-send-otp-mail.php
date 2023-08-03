@@ -51,7 +51,7 @@ if (isset( $_POST['sa_email'])) {
         // $mail->IsHTML(true);                                  //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
         //Recipients
-        $mail->setFrom('eventbuddy05@gmail.com', "admin@Event-Buddy");
+        $mail->setFrom('eventbuddy05@gmail.com', "admin@Anweshan");
         $mail->addAddress($sa_email, 'name');     //Add a recipient
 
         //Attachments

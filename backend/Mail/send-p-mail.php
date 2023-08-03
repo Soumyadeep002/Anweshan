@@ -43,7 +43,7 @@ if (isset($_SESSION['e_event_id']) &&  isset($_SESSION['e_p_email'])) {
         // $mail->IsHTML(true);                                  //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
         //Recipients
-        $mail->setFrom('eventbuddy05@gmail.com', "admin@Event-Buddy");
+        $mail->setFrom('eventbuddy05@gmail.com', "admin@Anweshan");
         $mail->addAddress($p_email, $p_name);     //Add a recipient
 
         //Attachments
