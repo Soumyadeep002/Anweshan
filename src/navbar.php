@@ -53,6 +53,8 @@
                   href="tech.php">TECH</a>
                 <a class="px-5 py-3 text-center hover:bg-cyan-950 duration-300  hover:text-white font-semibold text-xl lg:hover:bg-white lg:hover:text-cyan-950  "
                   href="cultural.php">CULTURAL</a>
+                <a class="px-2 py-3 text-center hover:bg-cyan-950 duration-300  hover:text-white font-semibold text-xl lg:hover:bg-white lg:hover:text-cyan-950  "
+                  href="https://akimatsuri-makaut.web.app/" target="_blank">ANIME FEST</a>
 
               </div>
             </div>
@@ -67,7 +69,7 @@
           <div id="gallery"
             class="element duration-150 transition-all ease-linear mx-auto hover:lg:bg-white lg:px-6 lg:py-5 text-white lg:text-white font-bold text-2xl  lg:hover:lg:text-blue-500 pb-0 lg:pb-3 ">
             
-            <a href="gallery.html">GALLERY</a>
+            <a href="gallery.php">GALLERY</a>
           </div>
           <div id="team"
             class="element duration-150 transition-all ease-linear mx-auto hover:lg:bg-white lg:px-6 lg:py-5 text-white lg:text-white font-bold text-2xl  lg:hover:lg:text-blue-500 pb-0 lg:pb-3 ">

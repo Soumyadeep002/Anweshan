@@ -78,6 +78,9 @@ if (isset($_GET['event_id'])) {
             color: white;
 
         }
+        .title-shadow{
+            text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+        }
 
         /* .nav-items{
         
@@ -95,7 +98,7 @@ if (isset($_GET['event_id'])) {
         style="background-image: url(../backend/event-assets/c_image/<?php echo $row['c_image1']; ?>);">
         <div
             class=" h-full flex justify-center items-center ">
-            <span class="<?php echo $row['event_type']?>  hover:text-cyan-300 duration-200 text-white text-6xl md:text-8xl lg:text-9xl"><?php echo $row['event_name']; ?></span>
+            <span class="<?php echo $row['event_type']?> mx-auto hover:text-cyan-300 duration-200 text-white text-4xl sm:text-5xl md:text-6xl lg:text-8xl xl:text-9xl title-shadow" ><?php echo $row['event_name']; ?></span>
             <a class="absolute top-auto bottom-56" href="" ><div class="rulebook   text-black text-3xl font-bold  px-8 py-2 md:px-10 md:py-4 border-2 rounded-lg bg-cyan-500 duration-300 hover:text-white hover:bg-cyan-700">
                 RULEBOOK
             </div></a>
@@ -105,7 +108,7 @@ if (isset($_GET['event_id'])) {
     </div>
 
     <div class="w-screen  bg-fixed bg-cover bg-center pb-20 " style="background-color:rgb(32, 6, 94);">
-        <div class="text-white w-[85%] lg:w-3/4 mx-auto">
+        <div class="text-white w-full lg:w-3/4 mx-auto">
 
             <!-- description  -->
             <div class="abt w-full text-center  font-semibold py-20  my_item_font"><span class="title-shadow text-3xl md:text-4xl lg:text-5xl">About Event</span>
@@ -120,7 +123,7 @@ if (isset($_GET['event_id'])) {
                     </div>
                     <div class="desc  text-justify ">
 
-                        <p class="text-xl">
+                        <p class="text-xl px-5 md:px-0">
                         <?php echo $row['event_desc']; ?>
                         </p>
                     </div>
@@ -132,11 +135,21 @@ if (isset($_GET['event_id'])) {
                 </div>
             </div>
 
+            
             <!-- form  -->
-            <div class="w-full mx-auto max-w-full md:max-w-5xl " style="background-color:rgba(0,0,0,0.33); padding:20px;">
-                <span class="text-3xl font-semibold">Fill this form for entry:</span>
+            <div class="w-full mx-auto md:max-w-5xl " style="background-color:rgba(0,0,0,0.33); padding-top: 10px; padding-bottom: 10px;">
+                <div class="box border-4 border-white mx-5 mt-5 p-4 mb-5">
+                    <div class="intruc text-3xl my_item_font text-red-500">Read before filling the forms.</div>
+                    <div class="instruction w-full mx-auto text-white my_item_font text-lg md:text-xl lg:text-2xl mb-5 text-justify ">
+                        
+                    <ul class="space-y-5">
+                        <li>To participate in this Event you have to fill up an entry form as well as a application form. Both are listed bellow.</li>
+                        <li> If you already fill up the google form, ignore it and fill only the entry form.</li>
+                    </ul></div>
+                </div>
+                <div class="text-3xl px-5 font-semibold">1. Fill this form for entry:</div>
 
-                <form class="mx-auto shadow-md rounded px-0 md:px-8 pt-6 pb-8 mb-4"
+                <form class="mx-auto shadow-md rounded px-8 pt-6 pb-8 mb-4"
                     action="event.php?event_id=<?php echo $event_id ?>" method="POST">
 
                 <?php ?>
@@ -185,9 +198,9 @@ if (isset($_GET['event_id'])) {
 
                     <div class="flex items-center justify-center">
                         <button
-                            class="bg-cyan-500 w-1/2 hover:bg-cyan-700 text-black hover:text-white text-2xl border-2 font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                            class="bg-cyan-500 w-full md:w-1/4 hover:bg-cyan-700 text-black duration-500 hover:text-white text-2xl border-2 font-bold py-1 px-4 rounded focus:outline-none focus:shadow-outline"
                             type="submit" id="submit" name="submit">
-                            Register
+                            Submit
                         </button>
 
                     </div>
@@ -306,6 +319,16 @@ if (isset($_GET['event_id'])) {
 
                             }
                             ?>
+
+                <div class="ttl text-3xl font-semibold px-5">2. Application Form </div>
+                <div class="mx-auto w-full mt-5">
+                <!-- <a          href ="#!"
+                            class="bg-cyan-500 w-1/2 hover:bg-cyan-700 text-black hover:text-white text-2xl border-2 font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                            type="submit" id="submit" name="submit">
+                            Google Form
+                        </a> -->
+                        <iframe class="w-full h-[800px]" src="https://docs.google.com/forms/d/e/1FAIpQLSf8qPLCGHoECfA8cQDQEst1um6XP0_Lp6KaYL15RE-Joih_nA/viewform?embedded=true">Loading…</iframe>
+                </div>
 
 
             </div>

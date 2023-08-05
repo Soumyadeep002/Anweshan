@@ -33,7 +33,7 @@ if (!defined('my-site')) {
 
     /* width */
     ::-webkit-scrollbar {
-      width: 10px;
+      width: 6px;
     }
 
     /* Track */
@@ -57,6 +57,7 @@ if (!defined('my-site')) {
 
     html {
       scroll-behavior: smooth;
+      scroll-padding-top: 500px;
     }
 
     .material-symbols-outlined {
@@ -104,7 +105,7 @@ if (!defined('my-site')) {
   <!-- explore button  -->
   <div id="explore" class="z-20  flex w-screen justify-center absolute left-[0px]">
     <div
-      class="fixed my_item_font animate-bounce top-auto bottom-44 expl border-4 text-white text-2xl font-bold text-center align-middle  px-10 hover:scale-50 py-2 duration-100 rounded-xl  bg-pink-600 active:bg-purple-900">
+      class="fixed my_item_font  top-auto bottom-44 expl border-4 text-white text-2xl font-bold text-center align-middle  px-10 hover:scale-110 py-2 duration-100 rounded-xl  bg-pink-600 active:bg-purple-900">
       <a type="button" href="#about-data">Explore</a>
 
     </div>

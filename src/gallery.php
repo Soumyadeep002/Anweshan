@@ -62,14 +62,16 @@ W
 
 <body class="bg-fixed" style="background-image: url(../assets/bgspace.gif); " >
 
-
+        <?php
+            include "navbar.php"
+        ?>
 
 
 
     
         <div
-            class="center  z-[200]  my-8 lg:my-16 ">
-            <a href="../index.html"> <img class="w-1/3 lg:w-1/6 mx-auto" src="../assets/logo.png" alt="logo"></a>
+            class="center  z-[200]  my-8 lg:my-28 " style="margin-top:5rem;">
+            <a href="../index.html"><img class="w-1/3 lg:w-1/6 mx-auto " src="../assets/logo.png" alt="logo"></a>
 
         </div>
     
