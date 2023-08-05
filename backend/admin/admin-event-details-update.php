@@ -228,6 +228,8 @@ session_start();
                         <label for="event-description">Event Description :</label>
                         <textarea class="form-control" id="event-description" required="" name="event_desc" value="" rows="3"><?php echo $row["event_desc"]; ?></textarea>
 
+                        <input type="text" id="form_link" class="form-control" name="form_link" required="" placeholder="Application Form Link" value="<?php echo $row["form_link"]; ?>" autofocus="" />
+
                         <input type="text" id="event-venue" class="form-control" name="event_venue" required="" placeholder="Event Venue" value="<?php echo $row["event_venue"]; ?>" autofocus="" />
 
                         <input type="text" id="event-admin-name" class="form-control" name="a_name" required="" placeholder="Event Admin Name" value="<?php echo $row["a_name"]; ?>" autofocus="" />
@@ -259,7 +261,7 @@ session_start();
                         return $data;
                     }
 
-                    if (isset($_POST['event_name']) && isset($_POST['organizer']) && isset($_POST['event_s_date']) && isset($_POST['event_s_time']) && isset($_POST['event_e_date']) && isset($_POST['event_e_time']) && isset($_POST['event_desc']) && isset($_POST['event_venue']) && isset($_POST['a_name']) && isset($_POST['a_email'])) {
+                    if (isset($_POST['event_name']) && isset($_POST['organizer']) && isset($_POST['event_s_date']) && isset($_POST['event_s_time']) && isset($_POST['event_e_date']) && isset($_POST['event_e_time']) && isset($_POST['event_desc']) && isset($_POST['form_link']) && isset($_POST['event_venue']) && isset($_POST['a_name']) && isset($_POST['a_email'])) {
 
                         //calling test_input function and storing into a variable 
                         $event_name = test_input($_POST['event_name']);
@@ -270,6 +272,7 @@ session_start();
                         $event_e_date = test_input($_POST['event_e_date']);
                         $event_e_time = test_input($_POST['event_e_time']);
                         $event_desc = test_input($_POST['event_desc']);
+                        $form_link = test_input($_POST['form_link']);
                         $event_venue = test_input($_POST['event_venue']);
                         $a_name = test_input($_POST['a_name']);
                         $a_email = test_input($_POST['a_email']);
@@ -282,8 +285,8 @@ session_start();
                         // $stmt->close();
 
 
-                        $stmt1 = $conn->prepare("UPDATE events SET  event_name=?, event_s_date=?, event_s_time=?, event_e_date=?, event_e_time=?, event_venue=?, organizer=?, event_desc=? WHERE event_id=?");
-                        $stmt1->bind_param("sssssssss", $event_name, $event_s_date, $event_s_time, $event_e_date, $event_e_time, $event_venue, $organizer, $event_desc, $event_id);
+                        $stmt1 = $conn->prepare("UPDATE events SET  event_name=?, event_s_date=?, event_s_time=?, event_e_date=?, event_e_time=?, form_link=?, event_venue=?, organizer=?, event_desc=? WHERE event_id=?");
+                        $stmt1->bind_param("ssssssssss", $event_name, $event_s_date, $event_s_time, $event_e_date, $event_e_time, $form_link, $event_venue, $organizer, $event_desc, $event_id);
                         $stmt1->execute();
                         $stmt1->close();
 

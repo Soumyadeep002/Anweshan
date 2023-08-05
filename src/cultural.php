@@ -27,6 +27,26 @@ if (!defined('my-site')) {
     <style>
        
         @import url('https://fonts.googleapis.com/css2?family=Balthazar&display=swap');
+
+            /* =====Custom Scroll-Bar===== */
+
+            /* width */
+            ::-webkit-scrollbar {
+            width: 6px;
+            }
+
+            /* Track */
+            ::-webkit-scrollbar-track {
+            background: rgb(2, 54, 54);
+            }
+
+            /* Handle */
+            ::-webkit-scrollbar-thumb {
+            background: linear-gradient(rgb(2, 44, 44), cyan, rgb(2, 44, 44));
+            border: 1px solid cyan;
+            border-radius: 100px
+            }
+
         .gothic{
             font-family: 'Balthazar', serif;
         }

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 01, 2023 at 06:56 PM
+-- Generation Time: Aug 05, 2023 at 06:02 PM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.0.28
 
@@ -43,23 +43,24 @@ CREATE TABLE `events` (
   `c_image3` varchar(100) NOT NULL DEFAULT 'eb-black-bg-logo-16-9.png',
   `approval` int(1) NOT NULL DEFAULT 0,
   `e_slot` int(10) NOT NULL,
-  `event_type` varchar(10) DEFAULT NULL
+  `event_type` varchar(10) DEFAULT NULL,
+  `form_link` varchar(2000) DEFAULT 'your embeded form link will be here'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `events`
 --
 
-INSERT INTO `events` (`event_id`, `event_name`, `event_s_date`, `event_s_time`, `event_e_date`, `event_e_time`, `event_venue`, `organizer`, `event_desc`, `event_broc`, `c_image1`, `c_image2`, `c_image3`, `approval`, `e_slot`, `event_type`) VALUES
-('0N5HL6', 'DRONEMANIA', '2023-01-01', '00:00:00', '2023-01-01', '00:00:00', 'Update Your event venue', 'SOUMYADEEP', 'event buddy description (please update from below )', '0N5HL6_event_broc.pdf', '0N5HL6_c_img1.png', '0N5HL6_c_img2.png', 'eb-black-bg-logo-16-9.png', 1, 0, 'tech'),
-('HI8EY3', 'PRIMA FACIE', '2023-01-01', '00:00:00', '2023-01-01', '00:00:00', 'Update Your event venue', 'SOUMYADEEP', 'event buddy description (please update from below )', 'HI8EY3_event_broc.pdf', 'HI8EY3_c_img1.png', 'HI8EY3_c_img2.png', 'eb-black-bg-logo-16-9.png', 1, 0, 'tech'),
-('9LN1XO', 'GAME-CON', '2023-01-01', '00:00:00', '2023-01-01', '00:00:00', 'Update Your event venue', 'dasd', 'event buddy description (please update from below )', '9LN1XO_event_broc.pdf', '9LN1XO_c_img1.png', '9LN1XO_c_img2.png', 'eb-black-bg-logo-16-9.png', 1, 0, 'tech'),
-('MDE8QR', 'SIT &amp; DRAW', '2023-01-01', '00:00:00', '2023-01-01', '00:00:00', 'Update Your event venue', 'dasd', 'event buddy description (please update from below )', 'MDE8QR_event_broc.pdf', 'MDE8QR_c_img1.png', 'MDE8QR_c_img2.png', 'eb-black-bg-logo-16-9.png', 1, 0, 'cultural'),
-('7RM9SQ', 'DANCE', '2023-01-01', '00:00:00', '2023-01-01', '00:00:00', 'Update Your event venue', 'SOUMYADEEP', 'event buddy description (please update from below )', '7RM9SQ_event_broc.pdf', '7RM9SQ_c_img1.png', '7RM9SQ_c_img2.png', 'eb-black-bg-logo-16-9.png', 1, 0, 'cultural'),
-('1VFIU9', 'NRITYA NATYA', '2023-01-01', '00:00:00', '2023-01-01', '00:00:00', 'Update Your event venue', 'SOUMYADEEP', 'event buddy description (please update from below )', '1VFIU9_event_broc.pdf', '1VFIU9_c_img1.png', '1VFIU9_c_img2.png', 'eb-black-bg-logo-16-9.png', 1, 0, 'cultural'),
-('B1UGQZ', 'QUIZ COMPETITION', '2023-01-01', '00:00:00', '2023-01-01', '00:00:00', 'Update Your event venue', 'SOUMYADEEP', 'event buddy description (please update from below )', 'B1UGQZ_event_broc.pdf', 'B1UGQZ_c_img1.png', 'B1UGQZ_c_img2.png', 'eb-black-bg-logo-16-9.png', 1, 0, 'cultural'),
-('MBSFIN', 'RECITATION', '2023-01-01', '00:00:00', '2023-01-01', '00:00:00', 'Update Your event venue', 'SOUMYADEEP', 'event buddy description (please update from below )', 'MBSFIN_event_broc.pdf', 'MBSFIN_c_img1.png', 'MBSFIN_c_img2.png', 'eb-black-bg-logo-16-9.png', 1, 0, 'cultural'),
-('1OYC89', 'SPRINT-R', '2023-01-01', '00:00:00', '2023-01-01', '00:00:00', 'Update Your event venue', 'SOUMYADEEP', 'event buddy description (please update from below )', '1OYC89_event_broc.pdf', '1OYC89_c_img1.png', '1OYC89_c_img2.png', 'eb-black-bg-logo-16-9.png', 1, 0, 'tech');
+INSERT INTO `events` (`event_id`, `event_name`, `event_s_date`, `event_s_time`, `event_e_date`, `event_e_time`, `event_venue`, `organizer`, `event_desc`, `event_broc`, `c_image1`, `c_image2`, `c_image3`, `approval`, `e_slot`, `event_type`, `form_link`) VALUES
+('0N5HL6', 'DRONEMANIA', '2023-01-01', '00:00:00', '2023-01-01', '00:00:00', 'Update Your event venue', 'SOUMYADEEP', 'event buddy description (please update from below )', '0N5HL6_event_broc.pdf', '0N5HL6_c_img1.png', '0N5HL6_c_img2.png', 'eb-black-bg-logo-16-9.png', 1, 0, 'tech', 'https://docs.google.com/forms/d/e/1FAIpQLSfVO344mumBbs-9PIXw-0gh5X5D8Uh0Doal-HFiWBFY-9y4OQ/viewform?embedded=true'),
+('HI8EY3', 'PRIMA FACIE', '2023-01-01', '00:00:00', '2023-01-01', '00:00:00', 'Update Your event venue', 'SOUMYADEEP', 'event buddy description (please update from below )', 'HI8EY3_event_broc.pdf', 'HI8EY3_c_img1.png', 'HI8EY3_c_img2.png', 'eb-black-bg-logo-16-9.png', 1, 0, 'tech', 'your embeded form link will be here'),
+('9LN1XO', 'GAMCON', '2023-01-01', '00:00:00', '2023-01-01', '00:00:00', 'Update Your event venue', 'dasd', 'event buddy description (please update from below )', '9LN1XO_event_broc.pdf', '9LN1XO_c_img1.png', '9LN1XO_c_img2.png', 'eb-black-bg-logo-16-9.png', 1, 0, 'tech', 'your embeded form link will be here'),
+('MDE8QR', 'SIT &amp; DRAW', '2023-01-01', '00:00:00', '2023-01-01', '00:00:00', 'Update Your event venue', 'dasd', 'event buddy description (please update from below )', 'MDE8QR_event_broc.pdf', 'MDE8QR_c_img1.png', 'MDE8QR_c_img2.png', 'eb-black-bg-logo-16-9.png', 1, 0, 'cultural', 'your embeded form link will be here'),
+('7RM9SQ', 'DANCE', '2023-01-01', '00:00:00', '2023-01-01', '00:00:00', 'Update Your event venue', 'SOUMYADEEP', 'event buddy description (please update from below )', '7RM9SQ_event_broc.pdf', '7RM9SQ_c_img1.png', '7RM9SQ_c_img2.png', 'eb-black-bg-logo-16-9.png', 1, 0, 'cultural', 'your embeded form link will be here'),
+('1VFIU9', 'NRITYA NATYA', '2023-01-01', '00:00:00', '2023-01-01', '00:00:00', 'Update Your event venue', 'SOUMYADEEP', 'event buddy description (please update from below )', '1VFIU9_event_broc.pdf', '1VFIU9_c_img1.png', '1VFIU9_c_img2.png', 'eb-black-bg-logo-16-9.png', 1, 0, 'cultural', 'your embeded form link will be here'),
+('B1UGQZ', 'QUIZ COMPETITION', '2023-01-01', '00:00:00', '2023-01-01', '00:00:00', 'Update Your event venue', 'SOUMYADEEP', 'event buddy description (please update from below )', 'B1UGQZ_event_broc.pdf', 'B1UGQZ_c_img1.png', 'B1UGQZ_c_img2.png', 'eb-black-bg-logo-16-9.png', 1, 0, 'cultural', 'your embeded form link will be here'),
+('MBSFIN', 'RECITATION', '2023-01-01', '00:00:00', '2023-01-01', '00:00:00', 'Update Your event venue', 'SOUMYADEEP', 'event buddy description (please update from below )', 'MBSFIN_event_broc.pdf', 'MBSFIN_c_img1.png', 'MBSFIN_c_img2.png', 'eb-black-bg-logo-16-9.png', 1, 0, 'cultural', 'your embeded form link will be here'),
+('1OYC89', 'SPRINT-R', '2023-01-01', '00:00:00', '2023-01-01', '00:00:00', 'Update Your event venue', 'SOUMYADEEP', 'event buddy description (please update from below )', '1OYC89_event_broc.pdf', '1OYC89_c_img1.png', '1OYC89_c_img2.png', 'eb-black-bg-logo-16-9.png', 1, 0, 'tech', 'your embeded form link will be here');
 
 -- --------------------------------------------------------
 
@@ -116,7 +117,8 @@ CREATE TABLE `participant` (
 INSERT INTO `participant` (`p_email`, `p_name`, `mobile`, `qr_image`, `attendance`, `entry_time`, `event_id`, `department`, `collage`) VALUES
 ('sambhuganguli1@gmail.com', 'Name1', '8240254624', '1690905559.png', 1, '21:33:30', '0N5HL6', 'IT', 'MAKAUT'),
 ('arunmondal3457@gmail.com', 'Name2', '3262565565', '1690905595.png', 1, '21:33:23', '0N5HL6', 'IT', 'MAKAUT'),
-('soumyadeepganguly1922@gmail.com', 'adsds', '08240254624', '1690906522.png', 1, '21:56:19', '0N5HL6', 'ds', 'makaut');
+('soumyadeepganguly1922@gmail.com', 'adsds', '08240254624', '1690906522.png', 1, '21:56:19', '0N5HL6', 'ds', 'makaut'),
+('Hdhdhdhdhdjsjjsjsjje@gmail.com', 'Soumya', '123', '1691231634.png', 0, '00:00:00', 'HI8EY3', 'Jdje', 'Jdje');
 
 -- --------------------------------------------------------
 

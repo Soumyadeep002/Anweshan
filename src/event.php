@@ -59,6 +59,28 @@ if (isset($_GET['event_id'])) {
         @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Anton&family=Black+Ops+One&family=Rubik+80s+Fade&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Black+And+White+Picture&display=swap');
+            /* =====Custom Scroll-Bar===== */
+
+            /* width */
+            ::-webkit-scrollbar {
+            width: 6px;
+            }
+
+            /* Track */
+            ::-webkit-scrollbar-track {
+            background: rgb(2, 54, 54);
+            }
+
+            /* Handle */
+            ::-webkit-scrollbar-thumb {
+            background: linear-gradient(rgb(2, 44, 44), cyan, rgb(2, 44, 44));
+            border: 1px solid cyan;
+            border-radius: 100px
+            }
+
+
+
+        
 
         .tech{
             font-family: 'Black Ops One', 'Roboto Condensed';
@@ -107,7 +129,7 @@ if (isset($_GET['event_id'])) {
         
     </div>
 
-    <div class="w-screen  bg-fixed bg-cover bg-center pb-20 " style="background-color:rgb(32, 6, 94);">
+    <div class="w-screen bg-fixed bg-cover bg-center pb-20 " style="background-color:rgb(32, 6, 94);">
         <div class="text-white w-full lg:w-3/4 mx-auto">
 
             <!-- description  -->
@@ -320,6 +342,7 @@ if (isset($_GET['event_id'])) {
                             }
                             ?>
 
+
                 <div class="ttl text-3xl font-semibold px-5">2. Application Form </div>
                 <div class="mx-auto w-full mt-5">
                 <!-- <a          href ="#!"
@@ -327,8 +350,9 @@ if (isset($_GET['event_id'])) {
                             type="submit" id="submit" name="submit">
                             Google Form
                         </a> -->
-                        <iframe class="w-full h-[800px]" src="https://docs.google.com/forms/d/e/1FAIpQLSf8qPLCGHoECfA8cQDQEst1um6XP0_Lp6KaYL15RE-Joih_nA/viewform?embedded=true">Loading…</iframe>
+                        <iframe class="w-full h-[800px]" src="<?php echo $row["form_link"]?>">Loading…</iframe>
                 </div>
+                
 
 
             </div>

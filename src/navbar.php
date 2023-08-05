@@ -25,16 +25,16 @@
         <div class=" lf order-2  mb-5 lg:mb-0  flex flex-col lg:flex-row space-y-5 lg:space-y-0 mr-4">
 
           <div id="home"
-            class="element duration-150 hover:lg:bg-white lg:px-6 lg:py-5 transition-all ease-linear lg:hover:lg:text-blue-500  flex lg:space-x-2 items-center mx-auto  text-white lg:text-white font-bold text-2xl hover:cursor-pointer">
+            class="element duration-150 hover:lg:bg-white lg:px-6 lg:py-5 transition-all ease-linear lg:hover:lg:text-cyan-950  flex lg:space-x-2 items-center mx-auto  text-white lg:text-white font-bold text-2xl hover:cursor-pointer">
             <a href="../index.html">HOME</a>
 
           </div>
           <div id="about"
-            class="element duration-150 transition-all ease-linear mx-auto hover:lg:bg-white lg:px-6 lg:py-5 text-white lg:text-white font-bold text-2xl  lg:hover:lg:text-blue-500 pb-0 lg:pb-3 ">
+            class="element duration-150 transition-all ease-linear mx-auto hover:lg:bg-white lg:px-6 lg:py-5 text-white lg:text-white font-bold text-2xl  lg:hover:lg:text-cyan-950 pb-0 lg:pb-3 ">
             <a href="../index.html#about-data">ABOUT</a>
           </div>
           <div id="event"
-            class="group element duration-150 transition-all ease-linear mx-auto hover:lg:bg-white lg:px-6 lg:py-5 text-white lg:text-white font-bold text-2xl  lg:hover:lg:text-blue-500 pb-0 lg:pb-3 ">
+            class="group element duration-150 transition-all ease-linear mx-auto hover:lg:bg-white lg:px-6 lg:py-5 text-white lg:text-white font-bold text-2xl  lg:hover:lg:text-cyan-950 pb-0 lg:pb-3 ">
             <!-- event dropdown -->
           <div id="dropdown-wrapper" class="inline-block group">
             <button
@@ -62,17 +62,17 @@
           </div>
 
           <div id="sponsor"
-            class="element duration-150 transition-all ease-linear mx-auto hover:lg:bg-white lg:px-6 lg:py-5 text-white lg:text-white font-bold text-2xl  lg:hover:lg:text-blue-500 pb-0 lg:pb-3 ">
+            class="element duration-150 transition-all ease-linear mx-auto hover:lg:bg-white lg:px-6 lg:py-5 text-white lg:text-white font-bold text-2xl  lg:hover:lg:text-cyan-950 pb-0 lg:pb-3 ">
             <a href="../index.html#sponsor-data">SPONSORS</a>
           </div>
 
           <div id="gallery"
-            class="element duration-150 transition-all ease-linear mx-auto hover:lg:bg-white lg:px-6 lg:py-5 text-white lg:text-white font-bold text-2xl  lg:hover:lg:text-blue-500 pb-0 lg:pb-3 ">
+            class="element duration-150 transition-all ease-linear mx-auto hover:lg:bg-white lg:px-6 lg:py-5 text-white lg:text-white font-bold text-2xl  lg:hover:lg:text-cyan-950 pb-0 lg:pb-3 ">
             
             <a href="gallery.php">GALLERY</a>
           </div>
           <div id="team"
-            class="element duration-150 transition-all ease-linear mx-auto hover:lg:bg-white lg:px-6 lg:py-5 text-white lg:text-white font-bold text-2xl  lg:hover:lg:text-blue-500 pb-0 lg:pb-3 ">
+            class="element duration-150 transition-all ease-linear mx-auto hover:lg:bg-white lg:px-6 lg:py-5 text-white lg:text-white font-bold text-2xl  lg:hover:lg:text-cyan-950 pb-0 lg:pb-3 ">
             <a href="../index.html#team-data">TEAM</a>
           </div>
 
