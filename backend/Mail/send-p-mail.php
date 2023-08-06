@@ -65,14 +65,14 @@ if (isset($_SESSION['e_event_id']) &&  isset($_SESSION['e_p_email'])) {
 
         $mail->Body   =
             '
-            <div
+        <div
             style="background-image: linear-gradient(to bottom right, rgb(10, 138, 138), cyan);; width: 500px; margin: auto; border-radius: 25px;">
-            <img src="https://raw.githubusercontent.com/Soumyadeep002/test/master/assets/logo.png" alt="ANWESHAN"
+            <img src="https://raw.githubusercontent.com/Soumyadeep002/anweshan/master/assets/logo.png" alt="ANWESHAN 2k23"
                 style="width: 50%; display: block; margin-left: auto; margin-right: auto; padding-top: 10px ;">
     
     
             <div style="text-align: center; display: flex; padding-top: 50px; margin-left:0px ;padding-left: 50px; padding-right: 50px; justify-content: center;">
-                <div style="margin: 10px;">
+                <div style="margin: auto; margin-left: auto;">
                     <img height="300px" width="300px" src="cid:banana" alt="event-qr">
                 </div>
             </div>
@@ -80,9 +80,9 @@ if (isset($_SESSION['e_event_id']) &&  isset($_SESSION['e_p_email'])) {
             <div style="text-align: center; color: rgb(3, 72, 3); padding-bottom: 30px; font-size: large;"><b>Your Booking is confirmed</b></div>
     
             <div class="details" style="text-align: center;">
-                <div class="name">Name: *******</div>
-                <div class="ename">Event Name: **********</div>
-                <div class="date">Event date: **/**/****</div>
+                <div class="name">Name: <strong>'.$p_name.'</strong></div>
+                <div class="ename">Event Name: <strong>'.$event_name.'</strong></div>
+                
             </div>
             <div style="text-align: center; padding: 15px; font-size: large;">
                 <p><b>Show this QR Ticket at entry</b></p>

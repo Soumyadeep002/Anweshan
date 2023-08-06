@@ -36,93 +36,113 @@ if ($result->num_rows > 0 && $result2->num_rows>0)
 						$p_email = $row['p_email'];
 						$event_name = $row2['event_name'];
 						$organizer = $row2['organizer'];
-						$participants[]= array(	'name'=>$row['p_name'],
-						'email'=>$row['p_email'],
-						'event_name'=>$row2['event_name'],
-						'Eorganizer'=>$row2['organizer'],
-						'frame'=>'../frames/framed.png'
-					);				
+					// 	$participants[]= array(	'name'=>$row['p_name'],
+					// 	'email'=>$row['p_email'],
+					// 	'event_name'=>$row2['event_name'],
+					// 	'Eorganizer'=>$row2['organizer'],
+					// 	'frame'=>'../frames/framed.png'
+					// );				
 						
-						header('content-type:image/jpeg');
-						$myframe = imagecreatefromjpeg('certificate.jpg');
-						$color = imagecolorallocate($myframe, 19,21,22);
-						$jpg_path = "jpegs/".$p_name.".jpeg";
-						imagettftext($myframe,20,0,400,420,$color,$font,$p_name);
-						imagejpeg($myframe, $jpg_path);
+					header('content-type:image/jpeg');
+					$myframe = imagecreatefromjpeg('certificate.jpg');
+					$color = imagecolorallocate($myframe, 19,21,22);
+					$jpg_path = "jpegs/".$p_name.".jpeg";
+					imagettftext($myframe,20,0,400,420,$color,$font,$p_name);
+					imagejpeg($myframe, $jpg_path);	
+
+
+					$pdf_path = "certificates/".$p_name.".pdf";
+					$pdf = new FPDF();
+					$pdf -> AddPage('L','A4');
+					$pdf -> Image($jpg_path, 0,0,295,205);
+					$pdf -> Output($pdf_path, "F");
+
+
+					try {
+						//Server settings
+						// $mail ->isSMTP();   
+						$mail = new PHPMailer();           
+						$mail->isSMTP();
+						$mail->Host       = 'smtp.gmail.com';
+						$mail->SMTPAuth   = true;                                   //Enable SMTP authentication
+						$mail->Username   = 'eventbuddy05@gmail.com';  // ! admin.eventbuddy@gmail.com
+						$mail->Password   = 'wobegropabtylszh';                               //SMTP password
+						$mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
+						// $mail->SMTPSecure = 'tls';            //Enable implicit TLS encryption
+						$mail->Port       = 465;
+						$mail->CharSet= 'UTF-8';
+						$mail->ContentType ='text/html; charset=UTF-8';
+						$mail->Encoding='8bit';
 						
+						// $mail->Port       = 587;
+						//TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
+					
+						//Recipients
+						$mail->setFrom('eventbuddy05@gmail.com', "admin@Anweshan");
 						
-						$pdf_path = "certificates/".$p_name.".pdf";
-						$pdf = new FPDF();
-						$pdf -> AddPage('L','A4');
-						$pdf -> Image($jpg_path, 0,0,295,205);
-						$pdf -> Output($pdf_path, "F");
+							// $name = $p_name
+							// $event_name = $event_name
+							// $email = $p_email
+							// $organizer = $organizer
+
+							
+							// $frame= $participants['frame'];
+						
+							// $certificate_html = str_replace(
+							// 		array('pname', 'eventName','Eorganizer','back_frame'),
+							// 		array($name, $event_name, $organizer, $frame), $html);
+					
+							
+					
+							
+							
+							
+							
+					
+							
+					
+					
+							$mail->addAddress($p_email, $p_name);
+							$mail->IsHTML(true);
+							$mail->Body   ="Thanks,".$p_name." for participating in ".$event_name.". Here is you certificate."; 
+							$mail->Subject = 'Hey! '.$p_name.' here is your Certificate of Participation for '.$event_name.'.';
+							$mail->addAttachment($pdf_path);
+							$mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
+								if(!$mail->send()){
+									echo "Mailer error".$p_mail->ErrorInfo;
+								}else{
+									?>
+									<script>
+									alert("Certificate Sent");
+									window.location.href = "../admin/admin.php";
+									</script>
+									<?php
+								
+									"Mail sent to".$p_email;
+								}
+								imagedestroy($myframe);
+								$mail->clearAddresses();
+								$mail->clearAttachments();
+							
+						}
+					catch (Exception $e) {
+						echo "Message could not be sent. Mailer Error: {$p_mail->ErrorInfo}";
+						}
 												
 						
 						
 						
 						
 						
-			try {
-				//Server settings
-				// $mail ->isSMTP();   
-				$mail = new PHPMailer();           
-				$mail->isSMTP();
-				$mail->Host       = 'smtp.gmail.com';
-				$mail->SMTPAuth   = true;                                   //Enable SMTP authentication
-				$mail->Username   = 'eventbuddy05@gmail.com';  // ! admin.eventbuddy@gmail.com
-				$mail->Password   = 'wobegropabtylszh';                               //SMTP password
-				$mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
-				// $mail->SMTPSecure = 'tls';            //Enable implicit TLS encryption
-				$mail->Port       = 465;
-				$mail->CharSet= 'UTF-8';
-				$mail->ContentType ='text/html; charset=UTF-8';
-				$mail->Encoding='8bit';
 				
-				// $mail->Port       = 587;
-												//TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
-
-				//Recipients
-				$mail->setFrom('eventbuddy05@gmail.com', "admin@Anweshan");
-				foreach($participants as $participants) { 
-					$name = $participants['name'];
-					$event_name = $participants['event_name'];
-					$email = $participants['email'];
-					$organizer = $participants['Eorganizer'];
-					$frame= $participants['frame'];
-				   
-					$certificate_html = str_replace(
-							array('pname', 'eventName','Eorganizer','back_frame'),
-							array($name, $event_name, $organizer, $frame), $html);
-
-					$mail->addAddress($email, $name);
-					$mail->IsHTML(true);
-					$mail->Body   ="Here is your Certificate"; 
-					$mail->Subject = 'Certificate of Participation';
-					$mail->addAttachment($pdf_path);
-					$mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
-						if(!$mail->send()){
-							echo "Mailer error".$mail->ErrorInfo;
-						}else{
-							?>
-							<script>
-							   alert("Certificate Sent");
-							   window.location.href = "../admin/admin.php";
-							</script>
-							<?php
-						   
-							"Mail sent to".$p_email;
-						}
-						imagedestroy($myframe);
-						$mail->clearAddresses();
-						$mail->clearAttachments();
-					   }
-				}
-			catch (Exception $e) {
-				echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
-				}
-			}
 }
-else{
+
+
+
+
+
+
+
 }
 }
 ?>
