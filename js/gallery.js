@@ -22,7 +22,7 @@ gallery : {
 
 
 document.querySelector('#hamb-btn').addEventListener('click', () => {
-    console.log("clicked")
+    
     document.getElementById("l1").classList.toggle('rotate-down')
     document.getElementById("l2").classList.toggle('opacity-0')
     document.getElementById("l3").classList.toggle('rotate-up')
@@ -30,7 +30,7 @@ document.querySelector('#hamb-btn').addEventListener('click', () => {
     
   })
   document.querySelector('#home').addEventListener('click', () => {
-    console.log("clicked")
+    
     document.getElementById("l1").classList.toggle('rotate-down')
     document.getElementById("l2").classList.toggle('opacity-0')
     document.getElementById("l3").classList.toggle('rotate-up')
@@ -38,7 +38,7 @@ document.querySelector('#hamb-btn').addEventListener('click', () => {
     
   })
   document.querySelector('#about').addEventListener('click', () => {
-    console.log("clicked")
+    
     document.getElementById("l1").classList.toggle('rotate-down')
     document.getElementById("l2").classList.toggle('opacity-0')
     document.getElementById("l3").classList.toggle('rotate-up')
@@ -46,7 +46,7 @@ document.querySelector('#hamb-btn').addEventListener('click', () => {
     
   })
   document.querySelector('#sponsor').addEventListener('click', () => {
-    console.log("clicked")
+    
     document.getElementById("l1").classList.toggle('rotate-down')
     document.getElementById("l2").classList.toggle('opacity-0')
     document.getElementById("l3").classList.toggle('rotate-up')
@@ -55,7 +55,7 @@ document.querySelector('#hamb-btn').addEventListener('click', () => {
   })
   
   document.querySelector('#gallery').addEventListener('click', () => {
-    console.log("clicked")
+    
     document.getElementById("l1").classList.toggle('rotate-down')
     document.getElementById("l2").classList.toggle('opacity-0')
     document.getElementById("l3").classList.toggle('rotate-up')
@@ -63,7 +63,7 @@ document.querySelector('#hamb-btn').addEventListener('click', () => {
     
   })
   document.querySelector('#team').addEventListener('click', () => {
-    console.log("clicked")
+    
     document.getElementById("l1").classList.toggle('rotate-down')
     document.getElementById("l2").classList.toggle('opacity-0')
     document.getElementById("l3").classList.toggle('rotate-up')

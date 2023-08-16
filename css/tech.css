@@ -16,13 +16,13 @@
   #title::before{
     
     left: -5px;
-    text-shadow: 5px 0 rgb(255, 0, 251);
+    text-shadow: 5px 0 rgb(0, 38, 255);
     animation: glitch-1 3s linear infinite reverse;
     
   }
   #title::after{
     left: 5px;
-    text-shadow: -5px 0 red;
+    text-shadow: -5px 0 rgb(153, 8, 211);
     animation: glitch-2 3s linear infinite reverse;
   }
   @keyframes glitch-1 {
@@ -157,46 +157,11 @@
   }
 /* end of glitch effect  */
 
-/* tech page spinner  */
-
-
-
-
-.spinner{
-    animation-duration: 1s;
-    animation-iteration-count: 1;
-    animation-name: spinner;
-    animation-timing-function: linear;
-    transition: all;
-    animation-fill-mode: forwards;
-}
-@keyframes spinner{
-    0%{
-        transform: rotate(0deg);
-    }
-  
-    50%{
-        transform: rotate(180deg);
-        
-    }
-    90%{
-        
-    }
-   
-    100%{
-      transform: rotate(360deg);
-      opacity: 0;
-      
-    }
-}
-
-
 
 /* tech title animation  */
 .anim-title {
     scale: 0;
-    animation-duration: 0.5s;
-    animation-delay: 1s;
+    animation-duration: 1s;
     animation-iteration-count: 1;
     animation-name: anim-title;
     animation-timing-function: linear;
@@ -218,3 +183,32 @@
 
 
   /* end of tech css  */
+
+
+  /* animate satalite */
+  .satalite-anim{
+    animation: satalite-anim 30s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-delay: 5s;
+    transform: translateX(-18rem); 
+
+  }
+  @keyframes satalite-anim {
+    0% {
+      transform: translateX(-18rem);  
+    }
+    25% {
+      transform: translate(150rem, -25rem);
+    }
+    50% {
+      transform: translate(150rem, 25rem);
+    }
+    75% {
+      transform: translate(-18rem, -25rem);
+    }
+    100% {
+      transform: translateX(-18rem);  
+    }
+  }
+  /* end of animate satalite */

@@ -6,32 +6,12 @@ function preload(){
 
 
 
-// mobile navbar open-close
 
-
-// mobile navbar open-close
-// document.querySelector('#hamb-btn').addEventListener("click", () => {
-//   console.log("hamburgur clicked")
-//   document.getElementById("mob-nav").classList.remove('hidden')
-//   document.getElementById('ln1').classList.add= 'group-hover:rotate-45 group-hover:absolute';
-  
-  
-// })
-
-// document.querySelector('#closer').addEventListener("click", () => {
-//   console.log("closer arrow clicked")
-//   document.getElementById("mob-nav").classList.add('hidden')
-//   document.getElementById('hamb-btn').style.visibility= 'visible';
- 
-
-// })
-
-// end of  mobile navbar open-close
 
 
 
 document.querySelector('#hamb-btn').addEventListener('click', () => {
-  console.log("clicked")
+  
   document.getElementById("l1").classList.toggle('rotate-down')
   document.getElementById("l2").classList.toggle('opacity-0')
   document.getElementById("l3").classList.toggle('rotate-up')
@@ -39,7 +19,7 @@ document.querySelector('#hamb-btn').addEventListener('click', () => {
   
 })
 document.querySelector('#home').addEventListener('click', () => {
-  console.log("clicked")
+  
   document.getElementById("l1").classList.toggle('rotate-down')
   document.getElementById("l2").classList.toggle('opacity-0')
   document.getElementById("l3").classList.toggle('rotate-up')
@@ -47,7 +27,7 @@ document.querySelector('#home').addEventListener('click', () => {
   
 })
 document.querySelector('#about').addEventListener('click', () => {
-  console.log("clicked")
+  
   document.getElementById("l1").classList.toggle('rotate-down')
   document.getElementById("l2").classList.toggle('opacity-0')
   document.getElementById("l3").classList.toggle('rotate-up')
@@ -55,7 +35,7 @@ document.querySelector('#about').addEventListener('click', () => {
   
 })
 document.querySelector('#sponsor').addEventListener('click', () => {
-  console.log("clicked")
+  
   document.getElementById("l1").classList.toggle('rotate-down')
   document.getElementById("l2").classList.toggle('opacity-0')
   document.getElementById("l3").classList.toggle('rotate-up')
@@ -63,7 +43,7 @@ document.querySelector('#sponsor').addEventListener('click', () => {
   
 })
 document.querySelector('#event').addEventListener('click', () => {
-  console.log("clicked")
+  
   document.getElementById("l1").classList.toggle('rotate-down')
   document.getElementById("l2").classList.toggle('opacity-0')
   document.getElementById("l3").classList.toggle('rotate-up')
@@ -72,7 +52,7 @@ document.querySelector('#event').addEventListener('click', () => {
   
 })
 document.querySelector('#gallery').addEventListener('click', () => {
-  console.log("clicked")
+  
   document.getElementById("l1").classList.toggle('rotate-down')
   document.getElementById("l2").classList.toggle('opacity-0')
   document.getElementById("l3").classList.toggle('rotate-up')
@@ -80,7 +60,7 @@ document.querySelector('#gallery').addEventListener('click', () => {
   
 })
 document.querySelector('#team').addEventListener('click', () => {
-  console.log("clicked")
+  
   document.getElementById("l1").classList.toggle('rotate-down')
   document.getElementById("l2").classList.toggle('opacity-0')
   document.getElementById("l3").classList.toggle('rotate-up')
@@ -95,5 +75,4 @@ document.querySelector('#team').addEventListener('click', () => {
 
 
 
-// rotate-45 absolute translate-y-1
-// -rotate-45 absolute 
+

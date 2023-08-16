@@ -79,7 +79,7 @@ if (!defined('my-site')) {
 </head>
 
 <body class="bg-fixed bg-cover bg-[50%] bg-no-repeat overflow-x-hidden filter "
-  style="background-image: url(../assets/tech/4884273.png); background-color: #00040f;">
+  style="background-image: url(../assets/bgspace.gif); background-color: #00040f;">
 
 
 
@@ -89,21 +89,26 @@ if (!defined('my-site')) {
   <!-- end of navbar  -->
 
   <!-- title  -->
-  <div class="fixed flex w-screen justify-center items-center h-screen title_fnt">
+  <div class="fixed z-10 flex w-screen justify-center items-center h-screen title_fnt">
     <div id="title" class="anim-title relative text-white font-bold text-6xl sm:text-7xl md:text-8xl lg:text-9xl "
       data-text="Tech Fest">
       Tech Fest
     </div>
-    <img id="spin" class="spinner absolute w-1/2 lg:w-3/12" src="../assets/tech/anweshan tech web page 4.png" alt="">
+    
   </div>
 
 
   <!-- zoomable image  -->
-  <div id="zoom" class="ct fixed z-0 w-screen h-screen bg-cover bg-[50%] pointer-events-none"
-    style="background-image: url(../assets/tech/test3.png);"></div>
+  <div id="zoom" class="ct fixed z-30 w-screen h-screen bg-cover bg-[50%] pointer-events-none"
+    style="background-image: url(../assets/tech/sdash.png);"></div>
+
+    <!-- satalite  -->
+    <div class="absolute z-0 hidden md:block">
+      <img class="satalite-anim fixed w-52 lg:w-64 xl:w-72 opacity-70 top-auto bottom-52"  src="../assets/tech/satalite.png" alt="satalite">
+    </div>
 
   <!-- explore button  -->
-  <div id="explore" class="z-20  flex w-screen justify-center absolute left-[0px]">
+  <div id="explore" class="z-40  flex w-screen justify-center absolute">
     <div
       class="fixed my_item_font  top-auto bottom-44 expl border-4 text-white text-2xl font-bold text-center align-middle  px-10 hover:scale-110 py-2 duration-100 rounded-xl  bg-pink-600 active:bg-purple-900">
       <a type="button" href="#about-data">Explore</a>
@@ -112,7 +117,7 @@ if (!defined('my-site')) {
   </div>
 
   <!-- start of contents  -->
-  <div class="z-10 absolute about  w-screen flex flex-col  about my_item_font">
+  <div class="z-20 absolute about  w-screen flex flex-col  about my_item_font">
 
     <!-- events  -->
     <div id="event" class=" container mx-auto  px-4 md:px-9 mt-[110vh] lg:mt-[140vh] mb-60" data-aos="zoom-in">
@@ -159,7 +164,7 @@ while ($row = $result->fetch_assoc()) {
           <?php
                         }
                     } else {
-                        echo  "<div style=\" padding: 10px; display:flex; margin: auto; align-items: center; border-radius: 10px; font-size: medium; font-weight: lighter;\" id=\"pre\" class=\"w-25 container info text-center bg-info\"> <p class=\"text-danger\" style=\"margin: auto;\" >No Event to Show</p></div>";
+                        echo  "<div style=\"background-color: yellow ; padding: 10px; display:flex; margin: auto; align-items: center; border-radius: 10px; font-size: medium; font-weight: lighter;\" id=\"pre\" class=\"w-25 container info text-center bg-info\"> <p class=\"text-danger\" style=\"margin: auto;\" >No Event to Show</p></div>";
                     }
                     ?>
 

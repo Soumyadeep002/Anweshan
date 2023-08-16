@@ -76,7 +76,7 @@ if (!defined('my-site')) {
         <!-- home-heading  -->
         <div class="p-5 home-heading">
             <div class="home-heading-content">
-                <h1>Welcome to ANWESHAN</h1>
+                <h1>Welcome to ANWESHAN 2K23</h1>
                 <p class="lead">Login to continue </p>
                 <div id="home-buttons">
                     

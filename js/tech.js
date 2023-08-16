@@ -10,20 +10,20 @@ window.addEventListener('scroll', function(){
     if (value != 0) {
         
         zoom.style.transform= `scale(${(value+100)/100})`;
-        // console.log((value+100)/80)
+ 
     }
         
     title.style.opacity= `${ 1 - (value / 600)}`;
 
 
     explore.style.opacity= `${ 1 - (value / 50)}`;
-    explore.className=`flex z-20 w-screen justify-center absolute left-[${value}px]`;
+    explore.style.left = `${value}px`;
 
 })
 
 // explore scrolling 
 document.querySelector('#explore').addEventListener("click", () => {
-  console.log("click on explore")
+
   var el = document.getElementById("event")
   el.scrollIntoView({ behavior: "smooth", block: "center" })
 })

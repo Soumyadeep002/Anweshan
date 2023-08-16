@@ -134,23 +134,23 @@ if (isset($_GET['event_id'])) {
 
             <!-- description  -->
             <div class="abt w-full text-center  font-semibold py-20  my_item_font"><span class="title-shadow text-3xl md:text-4xl lg:text-5xl">About Event</span>
-                <div class="main flex flex-col lg:flex-row justify-center items-center lg:px-10 lg:space-x-10 py-10 ">
+                <div class="main flex flex-col xl:flex-row justify-center items-center xl:px-10 xl:space-x-10 py-10 ">
 
                     <div class="prizes flex justify-center items-center ">
-                        <div class="trophy w-32 h-32">
-                            <img class="w-32 h-32" src="../assets/trphy.png" alt="">
+                        <div class="trophy w-32 h-32 md:w-40 md:h-40 lg:w-52 lg:h-52">
+                            <img class=" " src="../assets/trphy.png" alt="">
                         </div>
-                        <div class="prize flex flex-col w-52 justify-start items-center font-bold text-3xl">
+                        <div class="prize flex flex-col w-52 justify-start items-center font-bold text-3xl md:text-4xl lg:text-5xl">
                             <span>Exciting</span><span>Prize Pool</span></div>
                     </div>
                     <div class="desc  text-justify ">
 
-                        <p class="text-xl px-5 md:px-0">
+                        <p class="text-xl px-5 lg:px-0 ">
                         <?php echo $row['event_desc']; ?>
                         </p>
                     </div>
                 </div>
-                <div class="date-time text-xl">
+                <div class="date-time text-xl space-y-3 text-cyan-300" >
                     <p><span><strong>VENUE : </strong></span><?php echo $row["event_venue"] ?></p>
                     <p><span><strong>DATE : </strong></span><?php echo $row['event_s_date']; ?></p>
                     <p><span><strong>TIME : </strong></span> <?php echo $row['event_s_time']; ?> </p>
@@ -159,7 +159,7 @@ if (isset($_GET['event_id'])) {
 
             
             <!-- form  -->
-            <div class="w-full mx-auto md:max-w-5xl " style="background-color:rgba(0,0,0,0.33); padding-top: 10px; padding-bottom: 10px;">
+            <div class="w-full mx-auto mb-6" style="background-color:rgba(0,0,0,0.33); padding-top: 10px; padding-bottom: 10px;">
                 <div class="box border-4 border-white mx-5 mt-5 p-4 mb-5">
                     <div class="intruc text-3xl my_item_font text-red-500">Read before filling the forms.</div>
                     <div class="instruction w-full mx-auto text-white my_item_font text-lg md:text-xl lg:text-2xl mb-5 text-justify ">
@@ -171,7 +171,7 @@ if (isset($_GET['event_id'])) {
                 </div>
                 <div class="text-3xl px-5 font-semibold">1. Fill this form for entry:</div>
 
-                <form class="mx-auto shadow-md rounded px-8 pt-6 pb-8 mb-4"
+                <form class="mx-auto shadow-md rounded px-8 pt-6 pb-8 mb-4 w-full md:w-3/4"
                     action="event.php?event_id=<?php echo $event_id ?>" method="POST">
 
                 <?php ?>
@@ -344,7 +344,7 @@ if (isset($_GET['event_id'])) {
 
 
                 <div class="ttl text-3xl font-semibold px-5">2. Application Form </div>
-                <div class="mx-auto w-full mt-5">
+                <div class="mx-auto w-full mt-5 mb-8">
                 <!-- <a          href ="#!"
                             class="bg-cyan-500 w-1/2 hover:bg-cyan-700 text-black hover:text-white text-2xl border-2 font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
                             type="submit" id="submit" name="submit">
@@ -357,6 +357,31 @@ if (isset($_GET['event_id'])) {
 
             </div>
         </div>
+
+        <!-- contact -->
+        <div class="w-[95%] lg:w-3/4  border-4 border-white rounded-lg mx-auto text-white my_item_font">
+                            <div class=" px-5 py-2 text-4xl text-center lg:text-left">Contact Team</div>
+                            <div class="contacts flex flex-col md:flex-row gap-10 md:gap-32 justify-center mb-7">
+                                <!-- contacts  -->
+                                <div class="ctns text-center">
+                                    <div class="name text-xl md:text-3xl">This is name</div>
+                                    <div class="name text-md md:text-lg">This is email@2056.com</div>
+                                    <div class="name text-md md:text-lg">+91 82468545785</div>
+                                </div>
+                                <div class="ctns text-center">
+                                    <div class="name text-xl md:text-3xl">This is name</div>
+                                    <div class="name text-md md:text-lg">This is email@2056.com</div>
+                                    <div class="name text-md md:text-lg">+91 82468545785</div>
+                                </div>
+                                <div class="ctns text-center">
+                                    <div class="name text-xl md:text-3xl">This is name</div>
+                                    <div class="name text-md md:text-lg">This is email@2056.com</div>
+                                    <div class="name text-md md:text-lg">+91 82468545785</div>
+                                </div>
+                            </div>
+
+        </div>
+
     </div>
 
        <!-- footer  -->
