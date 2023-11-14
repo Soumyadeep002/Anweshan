@@ -1,0 +1,49 @@
+Dronathon 2K23 (Drone War)
+
+Introduction:
+Calling all drone enthusiasts! Prepare to showcase your aerial prowess at the Inter-College Drone Competition during Anual Fest "ANWESHAN" of Maulana Abul Kalam Azad University of Technology, west Bengal (MAKAUT, WB). Get ready to push the boundaries of flight with precision maneuvers, innovative designs, and cutting-edge technology. From adrenaline-fueled races to mind-bending obstacle courses, this competition will test your skills to the limit. Don't miss the chance to be part of a thrilling experience where talent, creativity, and technology converge in the sky. Join us and let your drones take flight in the pursuit of victory!
+
+
+
+Event Specification:
+Venue : MAKAUT, Main Campus, Haringhata, Nadia
+We are planning to organise three different kinds of challenges time, obstacles and freestyle.
+
+Round 1: Test your skills in navigating a challenging course against the clock and obstacles. Precision, speed, and agility will be key to success in this thrilling round. 
+
+Round 2: Showcase your drone's capabilities through jaw-dropping aerial maneuvers, mesmerizing formations, and captivating choreography. Push the boundaries and leave the audience in awe with your innovative and daring performance.
+
+
+
+Drone Specification:
+1. Drone should be handmade, no commercial drones are allowed.
+2. Drone formfactor :: Quadcopter
+3. Propeller size is max. 10 inch.
+4. Battery type 2s or 3s 
+5. Drone weight:: max 2000g
+6. Camera is optional
+7. No extra payloads are suggested
+8. Collage logo should be sticked on Drones.
+
+
+
+Pilot Guidelines:
+1. During the event, a particuler place will be allocated for pilot, and the drone will be controlled from this area only.
+2. Pilot will carry a minimum of 2 batteries, and charger, charging points wil be provided. 
+3. Pilot should bring their own tools.
+4. All frames must pass a safety and airworthiness inspection. Once the airframe has been checked and    approved, it must not be modified or changed, or it will need to be re-inspected.
+
+
+
+Student Rules Guide: 
+1. Safety First: Adhere to flight regulations and guidelines for a safe competition.
+2. Responsible Flying: Demonstrate responsible flying practices and avoid reckless maneuvers.
+3. Precision Maneuvers: Showcase smooth control and precise execution of flight patterns.
+4. Innovative Designs: Get creative with drone designs while complying with guidelines.
+5. Stay Updated: Stay informed about event announcements and changes.
+
+
+
+
+
+
