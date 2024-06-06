@@ -1,0 +1,71 @@
+.my-logo{
+    height: 4rem !important; 
+}
+
+.margin-auto{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.modal-bg{
+    -webkit-backdrop-filter: blur(25px) !important;
+    backdrop-filter: blur(25px) !important;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    color: var(--bs-modal-color);
+    pointer-events: auto;
+    
+    background-clip: padding-box;
+    border: var(--bs-modal-border-width) solid var(--bs-modal-border-color);
+    border-radius: var(--bs-modal-border-radius);
+    outline: 0;
+
+}
+
+
+.btn-modal-signup {
+    margin-top: 1rem;
+    width: 100%;
+    text-align: center;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    background-color: #fd7e14;
+    border: none;
+    color: white;
+    border-radius: 10px;
+}
+
+
+
+.btn-google {
+    width: 100%;
+    text-align: center;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    background-color: white;
+    border: none;
+    color: black;
+    border-radius: 10px;
+}
+
+.btn-google img {
+    width: 2rem;
+}
+
+
+.orange-image { 
+    -webkit-filter: opacity(.5) drop-shadow(0 0 0 #ffe600);  
+    filter: opacity(.5) drop-shadow(0 0 0 #ffe600);    
+} 
+
+
+.my-progress-bar{
+    width: 100% !important; 
+    position: absolute;
+    top: 105% !important;
+    bottom: -25;
+    
+   
+}
